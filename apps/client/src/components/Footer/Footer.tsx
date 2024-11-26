@@ -7,7 +7,7 @@ import { FlexBox } from "@/styles/styled/boxes";
 
 const socialLinks = [
   {
-    href: "https://github.com/yourusername",
+    href: "https://github.com/AndrewShmorhunGit/devit",
     icon: <GitHubIcon />,
     label: "GitHub",
   },

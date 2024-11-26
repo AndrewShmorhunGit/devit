@@ -52,6 +52,19 @@ To run both the client and server simultaneously, use the following command in t
 pnpm run dev:local
 ```
 
+**Important**
+
+- Client host have to be `3000` otherwise auth lambda will not response because of CORS issues!
+
+- Login credentials:
+
+```json
+{
+  "login": "login",
+  "password": "password"
+}
+```
+
 #### Run Individual Applications
 
 - **Client**  
@@ -61,13 +74,6 @@ pnpm run dev:local
   cd apps/client
   pnpm run dev:local
   ```
-
-```json
-{
-  "login": "login",
-  "password": "password"
-}
-```
 
 - **Server**  
   Navigate to the server directory and start the development server:
@@ -136,3 +142,25 @@ dev-it-mono/
 
 - Use the `.env.local` file for local development.
 - The client application is powered by Vite, and the server application runs on Node.js with `ts-node` and `nodemon`.
+- You may visit a client app on [devit.shmorhun.com](https://www.devit.shmorhun.com/)
+
+Follow this steps to start server:
+
+1. Add .env.dev file:
+
+.env.dev
+
+```
+NODE_ENV=dev
+ALLOW_ORIGIN=https://www.devit.shmorhun.com
+PORT=5000
+```
+
+2. Run this commands
+
+```bash
+  cd .\apps\server\
+  pnpm run build:dev
+  pnpm run dev
+
+```
