@@ -1,0 +1,20 @@
+{
+  "name": "dev-it-mono",
+  "version": "1.0.0",
+  "description": "Dev IT test task",
+  "scripts": {
+    "dev:client": "pnpm --filter client dev:local",
+    "dev:server": "pnpm --filter server dev:local",
+    "dev:local": "concurrently \"pnpm run dev:client\" \"pnpm run dev:server\"",
+    "build": "pnpm --filter server build:dev & pnpm --filter client build:dev"
+  },
+  "keywords": [],
+  "author": "Andrew Shmorhun",
+  "license": "ISC",
+  "volta": {
+    "node": "22.11.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}

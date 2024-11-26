@@ -1,0 +1,149 @@
+{
+  "general": {
+    "currentLanguage": "English",
+    "greet": "Welcome, {{login}}!",
+    "admin": "Admin",
+    "manager": "Manager",
+    "project": "Project",
+    "noData": "No data",
+    "allTheTime": "All the time",
+    "24hours": "24 hours",
+    "week": "Week",
+    "month": "Month",
+    "send": "Send",
+    "index": "Index",
+    "start": "Start",
+    "stop": "Stop",
+    "end": "End",
+    "duration": "Duration",
+    "inProgress": "In progress",
+    "of": "of",
+    "go": "Go",
+    "page": "Page",
+    "timestamp": "Timestamp",
+    "responses": "Responses",
+    "requests": "Requests",
+    "toMain": "To main menu",
+    "contactSupport": "Contact support",
+    "report": "Report",
+    "table": "Table",
+    "chart": "Chart"
+  },
+  "amountForm": {
+    "header": "Parallelism Form (RTKQ)",
+    "footerText": ""
+  },
+  "somethingWrong": {
+    "header": "Something went wrong"
+  },
+
+  "landing": {
+    "project": {
+      "title": "DevIT Test Task",
+      "description": "The project implements client-server logic for asynchronously sending 1000 HTTP requests with a user-defined concurrency and requests per second limit.",
+      "button": "Get started!"
+    },
+    "stack": {
+      "title": "Project Stack",
+      "descriptions": {
+        "react": "A JavaScript library for building user interfaces.",
+        "vite": "Frontend tool for building web applications quickly.",
+        "ts": "A typed superset that compiles to plain JavaScript.",
+        "rtkq": "The official, batteries-included toolset for efficient development.",
+        "mui": "Framework that implements Google's Material Design.",
+        "styled": "A library for styling React applications.",
+        "git": "Version control system.",
+        "githubActions": "CI/CD platform.",
+        "aws": "A comprehensive cloud computing platform.",
+        "terraform": "An open-source infrastructure as code software tool."
+      }
+    },
+
+    "features": { "title": "Project Features" }
+  },
+  "authForm": {
+    "login": {
+      "header": "Log in",
+      "button": "Log In",
+      "footerText": "Need to create an account?",
+      "footerLink": "Registration"
+    },
+    "register": {
+      "header": "Register",
+      "button": "Register",
+      "footerText": "Already have an account? ",
+      "footerLink": "Login"
+    },
+    "verification": {
+      "button": "Verify Code",
+      "resendCode": "Resend Code",
+      "resendCodeAvailableIn": "Resend code available in",
+      "seconds": "seconds",
+      "accountCreated": "Account has been created.",
+      "verifyEmail": "Please confirm your email address `{{email}}`.",
+      "pleaseRegister": "Please register to proceed to email verification.",
+      "resendPrompt": "Confirmation code has expired, please resend code."
+    }
+  },
+  "pages": {
+    "dashboard": {
+      "index": "Dashboard"
+    },
+    "statistics": {
+      "index": "Statistics"
+    }
+  },
+  "fields": {
+    "login": "Login",
+    "password": "Password",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "number": "Number"
+  },
+  "toasts": {
+    "login": { "success": "Successful login!", "error": "Login error" },
+    "register": {
+      "success": "Account created successfully!",
+      "error": "Register error"
+    },
+    "connectionError": "Network connection error"
+  },
+  "validationMessages": {
+    "login": {
+      "empty": "Login is required",
+      "min": "Login must be at least 3 characters long"
+    },
+    "password": {
+      "empty": "Password is required",
+      "min": "Password must be at least 8 characters long"
+    },
+    "email": {
+      "empty": "Email is required",
+      "invalid": "Invalid email address"
+    },
+    "phone": {
+      "empty": "Phone is required",
+      "invalid": "Invalid phone number"
+    },
+    "message": {
+      "required": "Message is required",
+      "min": "Message must be at least 3 characters long",
+      "max": "Message must be less than 1000 characters long"
+    }
+  },
+  "features": {
+    "rtkq": "In this project, `RTK Query` was implemented to streamline API interactions, ensuring efficiency and clarity in request management. Using `baseApi.injectEndpoints`, we dynamically added endpoints like `submitAmount`, promoting modularity and scalability for evolving application needs. The `submitAmount` mutation integrates query parameters and headers, supports abort signals for better resource management, and enables dynamic interactions with the server. Concurrency handling was achieved through a custom `processQueue` thunk, enabling controlled, efficient concurrent requests while preventing server overload. We also integrated `RTK Query`'s matchers with `Redux` slices to manage the full lifecycle of requests—tracking state, logging activity, and handling cancellation scenarios. To enhance user experience, real-time notifications with `react-toastify` inform users about the status of API requests, providing clear feedback on successes or errors.",
+    "terraform": "Developed and deployed client-side infrastructure on AWS using `Terraform`, incorporating `S3` for static website hosting, `ACM` for SSL/TLS certificates, `Route 53` for DNS management, and `CloudFront` as a CDN to ensure secure, fast, and scalable content delivery, all automated for consistency and efficiency.",
+    "materialUI": "Used to create a UI with `Material Design` components, offering a modern, convenient, and customizable interface.",
+    "reduxToolkit": "Simplifies state management in the application with convenient functions for working with `Redux`.",
+    "cognito": "`Cognito` is a user authentication, authorization, and user management service provided by AWS. It simplifies the process of adding user sign-up, sign-in, and access control to your web and mobile applications. `Cognito` integrates seamlessly with other AWS services, making it a powerful choice for cloud-native applications.",
+    "lambda": "`Lambda` is a serverless compute service that lets you run code without provisioning or managing servers. It executes your code only when it's triggered by events, and you pay only for the compute time you consume—there’s no charge when your code isn’t running.",
+    "apiGetaway": "`API Gateway` is a fully managed service that enables developers to create, publish, maintain, monitor, and secure APIs at any scale. It serves as a front door to your applications, allowing clients to interact with your backend services such as `AWS Lambda`, `EC2`, `DynamoDB`, or any other HTTP endpoint.",
+    "reactRouter": "`React Router` is a popular library for handling routing in React applications. It enables navigation between different views or components in a single-page application (SPA) without reloading the entire page. `React Router` provides a declarative way to define and manage routes within a React app, making it easier to control how users navigate through the app.",
+    "formik": "`Formik` is a popular library for handling forms in React applications. It simplifies form creation, validation, and submission by providing utilities for managing form state, handling user input, and integrating with validation libraries. `Formik` reduces the amount of boilerplate code needed for form handling and makes working with forms in React more manageable.",
+    "zod": "`Zod` is a TypeScript-first schema validation library. It allows you to define and validate the shape of data using schemas. `Zod` is particularly well-suited for validating inputs, including form data, API requests, and any other data structures in JavaScript/TypeScript applications. It is designed to be highly type-safe, meaning your TypeScript types and validation logic can stay in sync without requiring complex type assertions.",
+    "toastify": "A library for notifications, making it easy to display messages to users.",
+    "learnMore": "Learn more"
+  }
+}
